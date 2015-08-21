@@ -1,0 +1,33 @@
+//
+//  MiTan-Prefix.pch
+//  MiTan
+//
+//  Created by thl on 15/8/17.
+//  Copyright (c) 2015年 thl. All rights reserved.
+//
+
+#ifndef MiTan_MiTan_Prefix_pch
+#define MiTan_MiTan_Prefix_pch
+
+#import "APPHeader.h"
+#import "IMPHeader.h"
+#import "KEYHeader.h"
+#import "URLHeader.h"
+
+#define aaa @"fasdfa"
+
+#ifdef DEBUG
+# ifdef DLog
+#   undef DLog
+#  endif
+# define DLog(...); NSlog(__VAA_ARGS__);
+
+#else
+# ifdef DLog
+#  undef DLog
+# endif
+#  define DLOg(...);
+#endif
+
+
+#endif
